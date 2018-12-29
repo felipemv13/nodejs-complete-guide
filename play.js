@@ -1,6 +1,9 @@
-var name = 'Max';
-var age = 29;
-var hasHobbies = true;
+const name = 'Max';
+let age = 29;
+let hasHobbies = true;
+
+age = 30;
+name = 'Felipe'; // error: Assignment to constant variable.
 
 function summarizeUser(userName, userAge, userHasHobby) {
   return (
