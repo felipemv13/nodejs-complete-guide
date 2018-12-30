@@ -10,14 +10,19 @@ const person = {
 const arrays = ["Strings", 123, {}, true];
 const hobbies = ["Sports", "Cooking"];
 
-// for pass trough the array and expose item by item
-for (const hobby of hobbies) {
-  console.log(hobby);
-}
+// // for pass trough the array and expose item by item
+// for (const hobby of hobbies) {
+//   console.log(hobby);
+// }
 
+// console.log(hobbies);
+// console.log(hobbies.map(hobby => hobby));
+// // the 2 examples above generate the same result
+
+// // i can pass through the array and generate a new array using 'map'
+// console.log(hobbies.map(hobby => "Hobby: " + hobby));
+
+// 'map' doesn't change the array, because it works with a reference of this array
+// if I want to change the array, I can use, for example, 'push' method.
+hobbies.push('Programming');
 console.log(hobbies);
-console.log(hobbies.map(hobby => hobby));
-// the 2 examples above generate the same result
-
-// i can pass through the array and generate a new array using 'map'
-console.log(hobbies.map(hobby => "Hobby: " + hobby));
